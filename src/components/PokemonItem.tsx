@@ -1,4 +1,8 @@
-const PokemonItem = () => {
+interface Pokemon {
+
+}
+
+const PokemonItem = (pokemon:object):JSX.Element => {
     return ( 
         <>
             <div>
