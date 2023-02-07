@@ -5,7 +5,7 @@ const CharacterItem = ({ id,name,gender,image,status }:Character):JSX.Element =>
         <>
             <div className="h-full p-4 rounded-lg bg-white flex gap-x-6">
                 <div>
-                    <img className="rounded-full shadow-md" src={ image } width={100}/>
+                    <img alt={name} className="rounded-full shadow-md" src={ image } width={100}/>
                 </div>
                 <div className="w-full">
                     <div className="flex items-center">

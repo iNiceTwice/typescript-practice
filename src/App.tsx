@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Character } from './types';
 import { getCharacters } from './api/getCharacters';
 import CharacterItem from './components/CharacterItem';
+import Nav from './components/Nav';
 
-function App():JSX.Element {
-  
+function App():JSX.Element {  
   const [chars, setChars ] = useState<Character[]>([])
 
   const getData = async ():Promise<void> => {
@@ -19,7 +19,7 @@ function App():JSX.Element {
   console.log(chars)
   return (
    <div className='flex flex-col justify-center items-center h-full w-full bg-slate-700'>
-      <h1 className='text-4xl font-serif text-white font-semibold'>Personjes</h1>
+      <Nav/>
       <div className='gap-4 grid grid-cols-1 lg:grid-cols-3 px-10 py-4 mt-10 w-9/12'>
         {
           chars?.map((char) => (
