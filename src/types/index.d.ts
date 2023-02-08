@@ -5,3 +5,9 @@ export interface Character {
   image:string,
   status: "Alive" | "Dead" | "unknown"
 }
+
+export interface State {
+    characters: Character[],
+    currentPage: number,
+    pages: number | null
+}
