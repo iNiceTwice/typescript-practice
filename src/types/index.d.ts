@@ -9,5 +9,6 @@ export interface Character {
 export interface State {
     characters: Character[],
     currentPage: number,
-    pages: number 
+    pages: number,
+    query:string
 }

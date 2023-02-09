@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import { CharacterContext } from './context/charContext';
 import CharacterItem from './components/CharacterItem';
 import Nav from './components/Nav';
