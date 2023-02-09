@@ -5,8 +5,7 @@ import Nav from './components/Nav';
 
 function App():JSX.Element {  
   const { state } = useContext(CharacterContext)
-
-  console.log(state.characters)
+  
   return (
    <div className='flex flex-col justify-center items-center h-full w-full bg-slate-700'>
       <Nav/>
