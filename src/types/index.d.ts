@@ -3,6 +3,7 @@ export interface Character {
   name:string,
   gender:string,
   image:string,
+  url:string,
   status: "Alive" | "Dead" | "unknown"
 }
 

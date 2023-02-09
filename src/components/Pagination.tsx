@@ -9,11 +9,11 @@ const Pagination = () => {
 
     const handleNextPage = ():void => {
         state.currentPage < state.pages && 
-        setState(prevState => ({...prevState, currentPage: prevState.currentPage +1 }))
+        setState(prevState => ({...prevState, currentPage: prevState.currentPage + 1 }))
     }
     const handlePreviousPage = ():void => {
         state.currentPage > 1 && 
-        setState(prevState => ({...prevState, currentPage: prevState.currentPage -1 }))
+        setState(prevState => ({...prevState, currentPage: prevState.currentPage - 1 }))
     }
 
     return ( 
