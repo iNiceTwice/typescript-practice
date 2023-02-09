@@ -1,6 +1,6 @@
 import { Character } from "../types";
 
-const CharacterItem = ({ id,name,gender,image,status }:Character):JSX.Element => {
+const CharacterItem = ({ id, name, gender, image, status }:Character):JSX.Element => {
     return ( 
         <>
             <div className="h-full p-4 rounded-lg bg-white flex gap-x-6">
@@ -15,7 +15,7 @@ const CharacterItem = ({ id,name,gender,image,status }:Character):JSX.Element =>
                         { status === "unknown" ? <span className="p-1 bg-gray-600 rounded-full ml-4 h-fit"></span> : null }
                     </div>
                     <div>
-                        {gender}
+                        { gender }
                     </div>
                 </div>
             </div>

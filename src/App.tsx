@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { CharacterContext } from './context/charContext';
 import CharacterItem from './components/CharacterItem';
 import Nav from './components/Nav';
+import Pagination from './components/Pagination';
 
 function App():JSX.Element {  
   const { state } = useContext(CharacterContext)
-  
+
   return (
    <div className='flex flex-col justify-center items-center h-full w-full bg-slate-700'>
       <Nav/>
@@ -24,6 +25,7 @@ function App():JSX.Element {
           ))
         }
       </div>
+      <Pagination/>
    </div>
   );
 }

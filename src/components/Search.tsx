@@ -5,7 +5,7 @@ import useDebounce from "../hooks/useDebounce"
 const Search = () => {
   
   const [ query, setQuery ] = useState<string>("")
-  const { getCharactersByQuery } = useContext(CharacterContext)
+  const { getCharacters } = useContext(CharacterContext)
   const debounceSearch = useDebounce(query, 400)
 
   const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
@@ -13,7 +13,7 @@ const Search = () => {
   }
 
   useEffect(()=>{
-    getCharactersByQuery(debounceSearch)
+    getCharacters(debounceSearch)
     // eslint-disable-next-line
   },[debounceSearch])
 
