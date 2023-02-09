@@ -10,7 +10,7 @@ function App():JSX.Element {
   return (
    <div className='flex flex-col justify-center items-center h-full w-full bg-slate-700'>
       <Nav/>
-      <div className='gap-4 grid grid-cols-1 lg:grid-cols-3 px-10 py-4 mt-10 w-5/6'>
+      <div className='gap-4 grid grid-cols-1 lg:grid-cols-3 py-4 mt-10 w-5/6'>
         {
           state.characters?.map((char) => (
             <div key={char.id}>

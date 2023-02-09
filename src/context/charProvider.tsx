@@ -26,6 +26,7 @@ export const CharacterProvider = ({children}:Props) => {
 
     useEffect(()=>{
         getCharacters()
+        // eslint-disable-next-line
     },[state.currentPage,state.query])
 
     return (
